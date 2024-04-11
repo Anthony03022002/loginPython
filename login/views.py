@@ -8,6 +8,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication
+ 
 
 
 @api_view(['POST'])
@@ -48,4 +49,4 @@ def perfil(request):
     print(request.user)
 
 
-    return Response("Bienvenido{}".format(request.user.username), status=status.HTTP_200_OK)
+    return Response("Bienvenido {}" .format(request.user.username), status=status.HTTP_200_OK)
