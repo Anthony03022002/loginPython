@@ -1,1 +1,1 @@
-web: python manage.py collectstatic &&  gunicorn login.wsgi && pip install -r requirements.txt
+web: python manage.py collectstatic &&  gunicorn login.wsgi && pip install -r requirements.txt && . /opt/venv/bin/activate
