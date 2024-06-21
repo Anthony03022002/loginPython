@@ -1,1 +1,1 @@
-web: python manage.py collectstatic &&  gunicorn login.wsgi
+web: python manage.py collectstatic  && pip install -r requirements.txt &&  gunicorn login.wsgi 
