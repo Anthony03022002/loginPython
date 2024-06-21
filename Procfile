@@ -1,1 +1,1 @@
-web: gunicorn login.wsgi
+web: python manage.py collectstatic &&  gunicorn login.wsgi
